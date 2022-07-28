@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "施强前端博客",
+  "main": "index.js",
+  "repository": "https://github.com/cnstrong-tech/blog.git",
+  "author": "guoyanhong@cnstrong.cn",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
