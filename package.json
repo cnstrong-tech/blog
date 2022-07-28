@@ -7,10 +7,14 @@
   "author": "guoyanhong@cnstrong.cn",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-theme-reco": "^1.6.14"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  }
+  },
+  "keywords": [
+    "前端博客"
+  ]
 }

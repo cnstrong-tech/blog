@@ -2,6 +2,7 @@ module.exports = {
     title: "施强前端博客",
     description: "施强前端博客",
     base: "/blog/",
+    theme: "reco",
     locales: {
         '/': {
           lang: 'zh-CN'
@@ -18,6 +19,7 @@ module.exports = {
                 ]
             }
         ],
+        subSidebar: "auto",
         sidebar: [
             {
                 title: '欢迎学习',
