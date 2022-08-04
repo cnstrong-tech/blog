@@ -1,6 +1,9 @@
+const navConfig = require('../../config/navConfig')
+const sidebarConfig = require("../../config/sidebarConfig")
+
 module.exports = {
     title: "施强前端博客",
-    description: "施强前端博客",
+    description: "",
     base: "/blog/",
     theme: "reco",
     locales: {
@@ -8,36 +11,17 @@ module.exports = {
           lang: 'zh-CN'
         }
     },
+    markdown: {
+        lineNumbers: true, // 代码显示行号
+        toc: {
+            includeLevel: [1,2,3,4]
+        }
+    },
     themeConfig: {
-        nav: [
-            {text: '首页', link: "/"},
-            {
-                text: "规范",
-                items: [
-                    {text: "eslint规范", link: ""},
-                    {text: "git commit规范", link: ""},
-                ]
-            }
-        ],
+        // logo: "/assets/logo.png",
+        repo: "https://github.com/cnstrong-tech",
+        nav: navConfig,
         subSidebar: "auto",
-        sidebar: [
-            {
-                title: '欢迎学习',
-                path: '/',
-                collapsable: false, // 不折叠
-                children: [
-                    { title: "学前必读", path: "/" }
-                ]
-            },
-            {
-              title: "基础学习",
-              path: '/handbook/ConditionalTypes',
-              collapsable: false, // 不折叠
-              children: [
-                { title: "条件类型", path: "/handbook/ConditionalTypes" },
-                { title: "泛型", path: "/handbook/Generics" }
-              ],
-            }
-          ]
+        sidebar: sidebarConfig
     }
 }
