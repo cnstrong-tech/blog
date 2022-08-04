@@ -16,6 +16,7 @@ module.exports = [
             { title: "泛型", path: "/handbook/Generics" },
             { title: "基础类型", path: "/handbook/Generics" },
             { title: "动态类型", path: "/handbook/Generics" },
+            { title: "静态类型", path: "/handbook/Generics" },
         ],
     },
     {
