@@ -15,6 +15,7 @@ module.exports = [
             { title: "条件类型", path: "/handbook/ConditionalTypes" },
             { title: "泛型", path: "/handbook/Generics" },
             { title: "基础类型", path: "/handbook/Generics" },
+            { title: "动态类型", path: "/handbook/Generics" },
         ],
     },
     {
