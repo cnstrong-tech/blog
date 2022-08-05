@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "施强前端博客",
   "main": "index.js",
-  "repository": "https://github.com/cnstrong-tech/blog.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnstrong-tech/blog.git"
+  },
   "author": "guoyanhong@cnstrong.cn",
   "license": "MIT",
   "devDependencies": {
@@ -11,11 +14,14 @@
     "vuepress-theme-reco": "^1.6.14"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "deploy": "sh deploy.sh"
   },
   "keywords": [
-    "前端博客"
+    "前端博客",
+    "施强",
+    "施强前端",
+    "https://cnstrong-tech.github.io/blog/"
   ]
 }
