@@ -14,11 +14,15 @@ yarn dev
 yarn build
 ```
 
-## 3. 线上部署
+## 3. 部署
+
+本地部署
 - 编译代码推送并实现代码部署，推送的分支为`gh-pages`
 ```shell
 yarn deploy
 ```
+
+自动化部署
 
 ## 4. 推送未编译代码到仓库
 普通代码提交方式，执行`git commit` 
