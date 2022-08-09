@@ -6,12 +6,12 @@ https://cnstrong-tech.github.io/blog/
 # 使用
 ## 1. 本地启动
 ```shell
-yarn docs:dev
+yarn dev
 ```
 
 # 2. 线上打包
 ```shell
-yarn docs:build
+yarn build
 ```
 
 ## 3. 线上部署
