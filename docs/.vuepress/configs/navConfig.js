@@ -17,7 +17,7 @@ module.exports = [
         ]
     },
     {
-        text: "web框架",
+        text: "前端框架",
         items: [
             {text: "react", link: "/frame/react/"},
             {text: "react-router", link: "/frame/react-router/"},
