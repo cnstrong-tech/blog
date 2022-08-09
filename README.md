@@ -23,6 +23,7 @@ yarn deploy
 ```
 
 自动化部署
+workflows
 
 ## 4. 推送未编译代码到仓库
 普通代码提交方式，执行`git commit` 
