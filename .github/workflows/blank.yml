@@ -24,13 +24,28 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - uses: actions/setup-node@v3
+        # 设置node的版本
+        with:
+          node-version: '14.7'
+        # 执行步骤的名称
+      - name: Compiling start
+        # 执行的具体脚本
+        run: echo Compiling start!
+        # 如果在执行的时候报错，提示需要用户名跟邮箱，那么需要单独设置下邮箱跟用户名
+      - run: git config --global user.email "your email address"
+      - run: git config --global user.name "your user name"
+        # 执行安装跟打包命令
+      - run: npm install && npm run docs:build
+      - name: Deploy
+        # 这个是第三方提供的库，可以推送打包后的内容到指定分支
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # 这边需要设置第二步获取到的deploy key，否则会提示没有权限推送代码
+          deploy_key: ${{ secrets.coco }}
+          # 推送到该仓库中，地址格式为github名称/仓库名
+          external_repository: cnstrong-tech/blog
+          # 推送的分支
+          publish_branch: gh-pages
+          # 推送的内容
+          publish_dir: docs/.vuepress/dist
