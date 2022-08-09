@@ -1,27 +1,13 @@
-const navConfig = require('../../config/navConfig')
-const sidebarConfig = require("../../config/sidebarConfig")
+const themeConfig = require("./configs/themeConfig");
+const markdown = require('./configs/markdown')
+const plugins = require('./configs/plugins')
 
 module.exports = {
     title: "施强前端博客",
-    description: "",
+    description: "施强,施强前端,施强前端博客",
     base: "/blog/",
-    theme: "reco",
-    locales: {
-        '/': {
-          lang: 'zh-CN'
-        }
-    },
-    markdown: {
-        lineNumbers: true, // 代码显示行号
-        toc: {
-            includeLevel: [1,2,3,4]
-        }
-    },
-    themeConfig: {
-        // logo: "/assets/logo.png",
-        repo: "https://github.com/cnstrong-tech",
-        nav: navConfig,
-        subSidebar: "auto",
-        sidebar: sidebarConfig
-    }
+    keywords: "施强,施强前端,施强前端博客",
+    themeConfig,
+    plugins,
+    markdown
 }
